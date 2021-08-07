@@ -1,0 +1,490 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Agency</title>
+</head>
+<body>
+    
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  style="color: white !important; font-weight: bolder !important; font-size: x-large !important;"> <i class="fas fa-plane" style="color: white !important;"></i>MURAADS TRAVEL AGENCY</a>
+                  </li>
+              </ul>
+              <button type="button" class="login-btn" data-toggle="modal" data-target="#staticBackdrop" onclick="ScrollFun()">
+               Contact Us
+              </button>
+            </div>
+          </nav>
+
+          <h1>
+              Travel Around the City
+          </h1>
+          <p style="color: white; text-align: center; margin: 18px 0;">TAKE ONLY MEMORIES, LEAVE ONLY FOOTPRINTS</p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search here" onkeyup="searFun()" id="my-input">
+               <div class="input-group-append">
+                   <button type="button" class="input-group-text btn" onclick="Scroll()">Search</button>
+                   </div>
+               </div>
+          </div>
+    </section>
+<br>
+    <h1>Our Destination</h1>
+      <table class="table table-striped table-info" id="myTable">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">price</th>
+            <th scope="col">Days and Night</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Murree</td>
+            <td>15000</td>
+            <td>4 days 3 Nights</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Sawat</td>
+            <td>20000</td>
+            <td>4 Days 3 Nights</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Hunza</td>
+            <td>20000</td>
+            <td>3 Days 2 Nights</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Islamabad</td>
+            <td>8000</td>
+            <td>2 Days 1 Night</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Lahore</td>
+            <td>8500</td>
+            <td>3 Days 2 Night</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Gilgit Baldistan</td>
+            <td>10000</td>
+            <td>2 Days 1 Night</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Rawalpindi</td>
+            <td>8000</td>
+            <td>3 Days 2 Night</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Peshawar</td>
+            <td>10000</td>
+            <td>4 Days 3 Night</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Abottabad</td>
+            <td>8000</td>
+            <td>2 Days 1 Night</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Balochistan</td>
+            <td>8500</td>
+            <td>3 Days 2 Night</td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+    <section class="features">
+        <h1>Featured Destination</h1>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="com-md-4">
+                    <div class="feature-box">
+                        <img src="img1.jfif" alt="">
+                        <div class="price">
+                            <p>Rs.15,000</p>
+                    </div>
+                </div>
+                <div class="feature-detail">
+                    <h4>
+                        Hunza 
+                    </h4>
+                    <div>
+                    <span> <i class="fas fa-map-marker-alt"></i>Hunza</span>
+                    <span><i class="fas fa-sun"></i>2 Days</span>
+                    <span><i class="far fa-moon"></i>1 Night </span>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="card-deck">
+                <div class="card">
+                  <img src="img1.jfif" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Hunza</h5>
+                    <p class="card-text">
+                        <div>
+                            <span> <i class="fas fa-map-marker-alt"></i>Hunza</span>
+                            <span><i class="fas fa-sun"></i>2 Days</span>
+                            <span><i class="far fa-moon"></i>1 Night </span>
+                            </div>
+                    </p>
+                    <p class="card-text"><small class="text-muted"><button type="button" class="btn btn-info">Rs. 15000</button></small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img2.jpg" class="card-img-top" style="height: 270px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Naran kaghan</h5>
+                    <p class="card-text">
+                        <div>
+                            <span> <i class="fas fa-map-marker-alt"></i>Naran Kaghan</span>
+                            <span><i class="fas fa-sun"></i>2 Days</span>
+                            <span><i class="far fa-moon"></i>1 Night </span>
+                            </div>
+                    </p>
+                    <p class="card-text"><small class="text-muted"><button type="button" class="btn btn-info">Rs. 15000</button></small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Gligit Baldistan</h5>
+                    <p class="card-text">
+                        <div>
+                            <span> <i class="fas fa-map-marker-alt"></i>Gligit</span>
+                            <span><i class="fas fa-sun"></i>2 Days</span>
+                            <span><i class="far fa-moon"></i>1 Night </span>
+                            </div>
+                    </p>
+                    <p class="card-text"><small class="text-muted"></small><button type="button" class="btn btn-info">Rs. 15000</button></p>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>  
+    </section>
+
+    <section class="gallery">
+        <h1>Travelling Gallery</h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="gal">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-3" id="col">
+                          <div class="gallery-box" style="text-align: center !important;">
+                              <img src="i1.jpg" alt="">
+                              <h4 style="text-align: center !important;">Murree</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="i2.jpg" alt="">
+                              <h4 style="text-align: center !important;">Hunza Valley</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="i3.jfif" alt="">
+                              <h4 style="text-align: center !important;">Kashmir</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="i4.jfif" alt="" height="170px">
+                              <h4 style="text-align: center !important;">Sawat Valley</h4>
+                          </div> 
+                      </div> 
+                  </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <div class="gallery-box" style="text-align: center !important;">
+                              <img src="mh.jpg" alt="" style="height: 170px;">
+                              <h4 style="text-align: center !important;">Margala Hills</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="nv.jfif" alt="" style="height: 170px;">
+                              <h4 style="text-align: center !important;">Naran Valley</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="kv.jfif" alt="" style="height: 170px;">
+                              <h4 style="text-align: center !important;">Kaghan Valley</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="ng.jpeg" alt="" height="170px">
+                              <h4 style="text-align: center !important;">Nathia gali</h4>
+                          </div> 
+                      </div> 
+                  </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <div class="gallery-box" style="text-align: center !important;">
+                              <img src="l.jfif" alt="" style="height: 170px;">
+                              <h4 style="text-align: center !important;">Lahore</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="gil.jpg" alt="" style="height: 170px;">
+                              <h4 style="text-align: center !important;">Gilgit</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="q.jpg" alt="" style="height: 170px;">
+                              <h4 style="text-align: center !important;">Quetta</h4>
+                          </div> 
+                      </div> 
+                      <div class="col-md-3">
+                          <div class="gallery-box">
+                              <img src="i.jfif" alt="" height="170px">
+                              <h4 style="text-align: center !important;">Islamabad</h4>
+                          </div> 
+                      </div> 
+                  </div>
+              </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+
+    <section class="banner">
+        <div class="banner-highlights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p style="font-size: x-large;">Get 15% discount on the group of 10 people</p>
+                    </div>
+
+
+                    <!-- Button trigger modal -->
+<button type="button" class="login-btn" data-toggle="modal" data-target="#exampleModal">
+    Book Now
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black !important;">Booking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: burlywood !important;">
+          
+            <form action="connect.php" method="POST">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">First Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" name="firstname">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Last Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" name="lastname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Email</label>
+                  <input type="email" class="form-control" id="inputAddress" name="email" >
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Mobile Number</label>
+                      <input type="text" class="form-control" id="inputEmail4" name="mobileno">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Your City</label>
+                      <input type="text" class="form-control" id="inputEmail4" name="city">
+                    </div>
+                  </div>
+                <div class="form-row" style="justify-content: center;">
+                  <div class="form-group col-md-4" >
+                    <label for="inputState">Choose Your Destination</label>
+                    <select id="inputState" class="form-control" name="des">
+                      <option selected>Choose...</option>
+                      <option value="murree">Murree</option>
+                      <option value="hunza">Hunza</option>
+                      <option value="sawat">Sawat</option>
+                      <option value="gilgit">Gilgit Baldistan</option>
+                      <option value="kashmir">Kashmir</option>
+                      <option value="Lahore">Lahore</option>
+                      <option value="islam">Islamabad</option>
+                    </select>
+
+                    <select id="inputState" class="form-control" name="des">
+                        <option selected>Choose...</option>
+                        <option value="murree">Murree</option>
+                        <option value="hunza">Hunza</option>
+                        <option value="sawat">Sawat</option>
+                        <option  value="gilgit">Gilgit Baldistan</option>
+                        <option value="kashmir">Kashmir</option>
+                        <option  value="Lahore">Lahore</option>
+                        <option  value="islam">Islamabad</option>
+                      </select>
+                      <select id="inputState" class="form-control" name="des">
+                        <option selected>Choose...</option>
+                        <option value="murree">Murree</option>
+                        <option value="hunza">Hunza</option>
+                        <option value="sawat">Sawat</option>
+                        <option value="gilgit">Gilgit Baldistan</option>
+                        <option value="kashmir">Kashmir</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="islam">Islamabad</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-2" style="margin-top: 0.6cm; margin-left:30px ;">
+                    <label for="inputZip">people</label>
+                    <select id="inputState" class="form-control" name="people">
+                       
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="more">more than 10..</option>
+                        
+                      </select>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Confirm</button>
+                </div>
+              </form>
+
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="footer" style="background-color: wheat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="nav-link" href="#"  style="color: white !important; font-weight: bolder !important; font-size: x-large !important;"> <i class="fas fa-plane" style="color: white !important;"></i>MURAADS TRAVEL AGENCY</a>
+                </div>
+                <div class="col-md-3">
+                    <h4>
+                        Features
+                    </h4>
+                    <p>
+                        Deals & Offers
+                    </p>
+                    <p>
+                        Customer review
+                    </p>
+                    <p>
+                        Cancelation Policy
+                    </p>
+                    
+                </div>
+
+                <div class="col-md-3" id="contact">
+                    <h4>
+                        Quick Contact
+                    </h4>
+                    <p>
+                        <i class="fas fa-phone-alt"></i> +92 301234567
+                    </p>
+                    <p>
+                        <i class="far fa-envelope"></i>mahnoorarora@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-home"></i>xyz road, ABC city
+                    </p>
+                    
+                </div>
+                <div class="col-md-3">
+                    <h4>
+                       Follow US
+                    </h4>
+                    <p>
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </p>
+                    <p>
+                        <i class="fab fa-instagram"></i>Instagram
+                    </p>
+                    <p>
+                        <i class="fab fa-twitter"></i>Twitter
+                    </p>
+                    
+                </div>
+            </div>
+            <hr>
+            <p>&copy; Copyrights 2020</p>
+        </div>
+
+    </section>
+
+
+
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/10a9b743bc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+</body>
+</html>
